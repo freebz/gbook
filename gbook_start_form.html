@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>gbook_start.html</title>
+<style>
+	.gbook {
+		color: #ffffff;
+		font-family: 굴림, arial;
+		font-size: 12px;
+	}
+</style>
+</head>
+<body>
+	<br><p align='center'>방명력 생성 스크립트</p>
+	<form action='gbook_start.php' method='post'>
+    <table border='1' bordercolor='#c0c0c0' width='300' class='gbook' align='center>
+        <tr>
+            <td bgcolor='#cc0000' align='center'>방명력 테이블명</td>
+            <td bgcolor='#006600'>
+                <input type='text' name='code' value='gbook'>(명문 10자 이내)
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#cc0000' align='center'>관리자 아이디</td>
+            <td bgcolor='#006600'>
+                <input type='text' name='admin_id'>(영문 10자 이내)
+            </td>
+        </tr>
+    </table>
+    
+    <p align='center'><input type='submit' value='생성하기'></p>
+    </form>
+</body>
+</html>
