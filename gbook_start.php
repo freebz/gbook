@@ -22,7 +22,7 @@
 		PRIMARY KEY (aid)
 	)";
 	
-	$result1 = mysql_query($query1, $connect) or die("Error : "..mysql_error());
+	$result1 = mysql_query($query1, $connect) or die("Error : ".mysql_error());
 	$tbl_name = mysql_list_tables("phptest");
 	$tbl_cnt = mysql_num_rows($tbl_name);
 	for($i=0;$i<$tbl_cnt;$++){
