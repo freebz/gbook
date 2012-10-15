@@ -25,7 +25,7 @@
 	$result1 = mysql_query($query1, $connect) or die("Error : ".mysql_error());
 	$tbl_name = mysql_list_tables("phptest");
 	$tbl_cnt = mysql_num_rows($tbl_name);
-	for($i=0;$i<$tbl_cnt;$++){
+	for($i=0;$i<$tbl_cnt;$i++){
 		if(mysql_tablename($tbl_cnt, $i)=="gbook_admin") {
 			$flag = "ok";
 		}
