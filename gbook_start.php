@@ -3,7 +3,7 @@
 	mysql_select_db("phptest", $connect);
 
 	$query1 = "CREATE TABLE $code (
-		gid int(10) unsigned auto_increment,
+		gid int(10) NOT NULL auto_increment,
 		email varchar(35),
 		homepage varchar(50),
 		content text,
